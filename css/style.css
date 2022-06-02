@@ -13,13 +13,17 @@ body {
     background-color: var(--background-color);
     color: var(--primary-text-color);
 
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
 
-h1, h2,h3,h4,h5,h6 {
-    color: var(--title-text-color);
+.link {
+    text-decoration: none;
 }
+/* h1, h2,h3,h4,h5,h6 {
+    color: var(--title-text-color);
+} */
 
 /* header */
 
@@ -42,18 +46,28 @@ background-color: var(--secondary-title-color);
 
 /* site-nav */
 
-.site-nav a,
-.contact a {
+.current {
+    color: var(--accent-color);
+}
+
+.site-nav a {
     color: var(--title-text-color) ;
 
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.02em;
 }
 .site-nav a:hover,
 .site-nav a:focus {
     color: var(--accent-color);
+}
+
+.contact a {
+    color: var(--primary-text-color);
+    
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .contact a:hover,
@@ -104,7 +118,6 @@ background-color: var(--secondary-title-color);
 
 .advantages > h3 {
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
 }
@@ -162,7 +175,6 @@ background-color: var(--secondary-title-color);
 .address {
     color: var(--footer-text-color);
 
-    font-size: 14px;
     line-height: 1.71;
 }
 .address:hover,
